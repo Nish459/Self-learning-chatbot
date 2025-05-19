@@ -36,7 +36,7 @@ index.train(faq_embeddings)
 index.add(faq_embeddings)
 
 # Step 3: Encode a new query
-query = "How do I import API credentials in bulk?"
+query = "I'm unable to store multiple keys at once, What to do?"
 query_embedding = model.encode([query], convert_to_numpy=True)
 
 # Step 4: Perform approximate nearest neighbor search
@@ -49,6 +49,6 @@ matched_index = indices[0][0]
 matched_distance = distances[0][0]
 
 if matched_distance <= L2_THRESHOLD:
-    print(f"Match found: \"{questions[matched_index]}\" (Distance: {matched_distance:.4f})")
+    print(f"Match found: \n\"{faqs[matched_index]['question']}\"\n Answer: {faqs[matched_index]['answer']}\n(Distance: {matched_distance:.4f})")
 else:
     print(f"No close match. Closest was: \"{questions[matched_index]}\" (Distance: {matched_distance:.4f})")

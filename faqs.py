@@ -12,6 +12,14 @@ class FAQData:
             {
                 "question": "How to reset my password?",
                 "answer": "Click on 'Forgot password' on the login page."
+            },
+            {
+                "question": "How to reset my profile?",
+                "answer": "Click on 'Edit profile' on the login page."
+            },
+            {
+                "question": "How to reslove proxy error?",
+                "answer": "Select correct IP's from proxy section."
             }
         ]
     

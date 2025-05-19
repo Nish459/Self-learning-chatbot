@@ -70,4 +70,6 @@ def search_faq(query, k=2, threshold=0.65):
         print('Please connect to support team')
 
 # Test query
-search_faq("How to upload multiple API keys?")
+# search_faq("How to upload multiple API keys?")
+search_faq("I'm unable to store multiple keys at once, What to do?")
+

@@ -40,7 +40,7 @@ query = "I'm unable to store multiple keys at once, What to do?"
 query_embedding = model.encode([query], convert_to_numpy=True)
 
 # Step 4: Perform approximate nearest neighbor search
-k = 1  # number of nearest neighbors to return
+k = 4  # number of nearest neighbors to return
 distances, indices = index.search(query_embedding, k)
 
 # Step 5: Apply threshold logic
